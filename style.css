@@ -1,0 +1,435 @@
+p{
+    font-size: 30px;
+    text-align: justify;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+html {
+    overflow-x: hidden;
+}
+.itc-slider__wrapper {
+    overflow: hidden;
+}
+.itc-slider__item {
+    flex: 0 0 50%;
+    max-width: 50%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 7rem;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+.adaptive{
+    width: 100%;
+    display: flex;
+}
+html, body{
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+}
+
+.one{
+    background: #111111;
+    width: 5%;
+    min-height: 100%;
+}
+.two{
+    width: 100%;
+
+}
+
+.startslide img{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+
+}
+.line{
+    display: flex;
+    width: 100%;
+    position: relative;
+    left: 0px;
+    transition: all ease 1s;
+
+}
+.startslide{
+    /*background: url("/img/img3.png");*/
+    background-size: cover;
+    height: 100vh;
+}
+
+.navbar{
+    background: black;
+    width: 40%;
+    height: 100px;
+    border-radius: 0px 0px 20px 20px;
+}
+.navbarconte{
+    color: white;
+    padding: 30px 10% 0px 10%;
+}
+
+.navbarlink{
+    font-size: 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.cemicattitle{
+    margin-top: 200px;
+    margin-left: 5%;
+    width: 40%;
+}
+
+.cemicattitle h1{
+    color:#FDCA00 ;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+.cemicattitle button{
+    margin-right: 30%;
+    font-size: 30px;
+    background: #FDCA00;
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: none;
+}
+.container{
+    margin: 50px 8% ;
+}
+
+.centerAboutUs{
+    display: flex;
+    justify-content: space-between;
+}
+.container h1{
+    text-align: center;
+}
+
+.centerAboutUs img{
+    width: 160px;
+}
+.zapcenter{
+    margin-top: 100px;
+}
+.centerzap, .zapcenter{
+    display: flex;
+    justify-content: center;
+}
+
+.centerzap{
+    margin-top: 30px;
+    background: black;
+    color:white;
+    padding: 20px 50px;
+    border-radius: 20px;
+}
+
+.centerzap{
+
+}
+.zapcard{
+    margin: 0px 40px 0px 40px;
+    width: 2px;
+    background: #FDCA00;
+}
+
+.cardAboutUs{
+    padding-top: 20px;
+    width: 22%;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    background: black;
+}
+
+.service img{
+    width: 60%;
+}
+
+.employyes p{
+    text-align: center;
+}
+.oneemploy{
+    width: 33%;
+}
+
+.manyemploeeys{
+    display: flex;justify-content: space-between
+}
+.questions{
+    background: black;
+    border-radius: 20px;
+    padding: 40px;
+    color: white;
+}
+.inputPlace{
+    display: flex;
+    justify-content: space-between;
+}
+.questions input{
+    width: 100%;
+    border-radius: 20px;
+    height: 35px;
+}
+.centerAboutUs p{
+    text-align: center;
+}
+
+textarea{
+    border-radius: 20px;
+}
+
+.questions button{
+    margin-top: 40px;
+    border: none;
+    padding: 5px 40px;
+    background: #FDCA00;
+    border-radius: 45px;
+    font-size: 35px;
+}
+.centerzap h1{
+    font-size: 32px;
+    color: #FDCA00;
+}
+
+.catalog{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 33% 33% 34%;
+}
+.catalogcenter{
+    display: flex;
+    justify-content: center;
+}
+.catalog button{
+    padding: 10px 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 20px;
+    background: #FDCA00;
+}
+
+.circle{
+    width: 10px;
+    height: 10px;
+    background: #FDCA00;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    margin-top: 25px;
+}
+.points{
+    position: fixed;
+    display: flex;
+    width: 5%;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+@media (max-width: 1200px) {
+    .one {
+        width: 6%;
+    }
+    .navbarlink{
+        font-size: 18px;
+    }
+    .centerAboutUs img{
+        width: 150px;
+    }
+}
+.centerAboutUs img{
+    width: 135px;
+}
+.cardAboutUs{
+    font-size: 26px;
+    border-radius: 20px;
+}
+
+.oneemploy img{
+    width: 70%;
+}
+.oneemploy p{
+    font-size: 24px;
+}
+.oneemploy h1{
+    font-size: 26px;
+}
+
+
+@media (max-width: 1000px) {
+    p{
+        font-size: 24px
+    }
+    .centerAboutUs img{
+        width: 120px;
+    }
+    .container{
+        margin: 50px 30px 50px 30px;
+    }
+    .cardAboutUs{
+        font-size: 24px;
+    }
+    .oneemploy img{
+        width: 50%;
+    }
+    .oneemploy p{
+        font-size: 20px;
+    }
+    .oneemploy h1{
+        font-size: 24px;
+    }
+    .startslide{
+        background: url("img3.png");
+background-position-x: -500px;
+    }
+
+}
+@media (max-width: 768px) {
+    p{
+        font-size: 20px
+    }
+    .one {
+        width: 8%;
+    }
+    .navbar{
+        width: 70%;
+    }
+    .cemicattitle{
+        width: 70%;
+    }
+    .cemicattitle button{
+        margin-right: 25%;
+        font-size: 25px;
+        padding: 8px 26px;
+        border-radius: 20px;
+    }
+    .centerAboutUs img{
+        width: 70px;
+    }
+    .cardAboutUs{
+        width: 23%;
+        font-size: 18px;
+    }
+    .oneemploy img{
+        width: 35%;
+    }
+    .oneemploy p{
+        font-size: 14px;
+    }
+    .oneemploy h1{
+        font-size: 16px;
+    }
+    .questions button{
+        margin-top: 25px;
+        border: none;
+        padding: 5px 35px;
+        background: #FDCA00;
+        border-radius: 45px;
+        font-size: 28px;
+    }
+
+}
+@media (max-width: 480px) {
+    .one{
+        display: none;
+    }
+    .two{
+        width: 100%;
+    }
+    .navbar{
+        width: 90%;
+    }
+    .navbarlink{
+        font-size: 15px;
+    }
+    .cemicattitle{
+        width: 90%;
+    }
+    .cemicattitle button{
+        margin-right: 20%;
+        font-size: 20px;
+        padding: 6px 22px;
+        border-radius: 20px;
+    }
+    .centerAboutUs{
+        display: grid;
+        grid-template-columns: 45% 45%;
+        row-gap: 20px;
+    }
+    .container{
+        margin: 30px 15px 30px 15px;
+    }
+    .cardAboutUs{
+        width: 100%;
+        font-size: 20px;
+    }
+    p{
+        font-size: 18px;
+    }
+    .oneemploy{
+        width: 90%;
+    }
+    .oneemploy img{
+        width: 45%;
+    }
+    .oneemploy p{
+        font-size: 20px;
+    }
+    .oneemploy h1{
+        font-size: 22px;
+    }
+    .manyemploeeys{
+        display: grid;
+        justify-items: center;
+        grid-template-columns: 100%;
+        row-gap: 20px;
+    }
+    .startslide{
+        background: url("img3.png");
+        background-position-x: -650px;
+    }
+    .zapcard{
+        margin: 0px 20px 0px 20px;
+        width: 2px;
+        background: #FDCA00;
+    }
+
+    .centerzap{
+        padding: 20px 30px;
+    }
+    .inputPlace{
+        display: block;
+    }
+    .questions button{
+        margin-top: 20px;
+        border: none;
+        padding: 5px 30px;
+        background: #FDCA00;
+        border-radius: 45px;
+        font-size: 20px;
+    }
+    .catalog{
+        display: grid;
+        width: 100%;
+        grid-template-columns: 50% 50%;
+    }
+}
