@@ -102,27 +102,37 @@
                     <h1>Запчасти</h1>
                     <div style="display: flex;justify-content: center">
                         <div class="centerzap">
-                            <div>
+                            <div style="width: 100%">
                                 <h1>SEM</h1>
                                 <div></div>
-                                <p>Запчасти</p>
                             </div>
                             <div class="zapcard"></div>
-                            <div>
+                            <div style="width: 100%">
                                 <h1>CAT</h1>
                                 <div></div>
-                                <p>Запчасти</p>
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <p>
-                            Мы предлагаем оригинальные запчасти для спецтехники SEM
-                            и CAT с быстрой доставкой и конкурентными ценами.
-                            Выбирайте из широкого ассортимента запчастей для погрузчиков
-                            , бульдозеров, грейдеров, дорожных катков и другой техники.
-                        </p>
+                    <div class="zapdouble">
+                        <div class="bgzap">
+                            <div class="zapimgs">
+                                <div class="zapline">
+                                    <img src="img/img3.png">
+                                    <img src="img/img1.JPG">
+                                    <img src="img/img2.JPG">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="textzap">
+                            <p>
+                                Мы предлагаем оригинальные запчасти для спецтехники SEM
+                                и CAT с быстрой доставкой и конкурентными ценами.
+                                Выбирайте из широкого ассортимента запчастей для погрузчиков,
+                                бульдозеров, грейдеров, дорожных катков и другой техники.
+                            </p>
+                        </div>
                     </div>
+
                 </div>
             </div>
             <div>
@@ -146,51 +156,62 @@
                     </p>
                 </div>
             </div>
-            <div class="employyes">
-                <h1>Сотрудники</h1>
-                <div class="manyemploeeys">
-                    <div class="oneemploy">
-                        <div style="width: 100%;display: flex;justify-content: center">
-                            <img src="/semicat/img/image%202%20(2).png"></div>
-                        <h1>Иванов Иван</h1>
-                        <p>Руководитель</p>
-                        <p>+7(999) 999 99-99</p>
-                    </div>
-                    <div class="oneemploy">
-                        <div style="width: 100%;display: flex;justify-content: center">
-                            <img src="/semicat/img/image%202%20(2).png"></div>
-                        <h1>Сергеев Фёдор</h1>
-                        <p>Менеджер по продажам</p>
-                        <p>+7(999) 999 99-99</p>
-                    </div>
-                    <div class="oneemploy">
-                        <div style="width: 100%;display: flex;justify-content: center">
-                            <img src="/semicat/img/image%202%20(2).png"></div>
-                        <h1>Антонов Антон</h1>
-                        <p>Консультант</p>
-                        <p>+7(999) 999 99-99</p>
-                    </div>
-                </div>
-            </div>
+            <!--            <div class="employyes">-->
+            <!--                <h1>Сотрудники</h1>-->
+            <!--                <div class="manyemploeeys">-->
+            <!--                    <div class="oneemploy">-->
+            <!--                        <div style="width: 100%;display: flex;justify-content: center">-->
+            <!--                            <img src="/semicat/img/image%202%20(2).png"></div>-->
+            <!--                        <h1>Иванов Иван</h1>-->
+            <!--                        <p>Руководитель</p>-->
+            <!--                        <p>+7(999) 999 99-99</p>-->
+            <!--                    </div>-->
+            <!--                    <div class="oneemploy">-->
+            <!--                        <div style="width: 100%;display: flex;justify-content: center">-->
+            <!--                            <img src="/semicat/img/image%202%20(2).png"></div>-->
+            <!--                        <h1>Сергеев Фёдор</h1>-->
+            <!--                        <p>Менеджер по продажам</p>-->
+            <!--                        <p>+7(999) 999 99-99</p>-->
+            <!--                    </div>-->
+            <!--                    <div class="oneemploy">-->
+            <!--                        <div style="width: 100%;display: flex;justify-content: center">-->
+            <!--                            <img src="/semicat/img/image%202%20(2).png"></div>-->
+            <!--                        <h1>Антонов Антон</h1>-->
+            <!--                        <p>Консультант</p>-->
+            <!--                        <p>+7(999) 999 99-99</p>-->
+            <!--                    </div>-->
+            <!--                </div>-->
+            <!--            </div>-->
             <div>
                 <div class="questions">
                     <h1>Остались вопросы?</h1>
                     <div class="inputPlace">
                         <div style="width: 100%">
-                            <p>Введите имя</p>
-                            <input>
+                            <p>Введите имя *</p>
+                            <input class="name">
                         </div>
                         <div style="width: 10%"></div>
                         <div style="width: 100%">
-                            <p>Введите Email</p>
-                            <input>
+                            <p>Введите Email *</p>
+                            <input class="email">
                         </div>
                     </div>
-                    <p>Задайте вопрос</p>
-                    <textarea style="width: 100%;height: 150px"></textarea>
+                    <p>Задайте вопрос *</p>
+                    <textarea style="width: 100%;height: 150px" class="textar"></textarea>
                     <div style="display: flex;justify-content: center">
-                        <button>Отправить</button>
+                        <button class="sendMail">Отправить</button>
                     </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="lastslide">
+            <div class="lastslideConteiner">
+                <div class="map" id="map">
+                    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>
+                </div>
+                <div style="margin-left: 50px">
+                    <p>Адрес: Софийская ул., 4У, Санкт-Петербург</p>
                 </div>
             </div>
         </div>
