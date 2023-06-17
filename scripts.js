@@ -11,7 +11,7 @@ setInterval(() => {
     console.log('su')
     console.log(wi)
 
-}, 3500)
+}, 7000)
 let scrollHeight = Math.max(
     document.body.scrollHeight, document.documentElement.scrollHeight,
     document.body.offsetHeight, document.documentElement.offsetHeight,
@@ -118,15 +118,7 @@ sendMail.onclick = ()=> {
 }
 
 window.onresize = function(event) {
-    if (document.documentElement.clientWidth > 576 && document.documentElement.clientWidth < 768) {
         window.location.reload()
-    } else if(document.documentElement.clientWidth > 768 && document.documentElement.clientWidth < 992) {
-        window.location.reload()
-    } else if(document.documentElement.clientWidth > 992) {
-        window.location.reload()
-    } else {
-        window.location.reload()
-    }
 };
 
 

@@ -20,6 +20,10 @@ html {
     display: flex;
 }
 html, body{
+    position: relative;
+    left: 0px;
+    right: 0px;
+    max-width: 100%;
     margin: 0px;
     padding: 0px;
     height: 100%;
@@ -289,7 +293,7 @@ textarea{
 .blackcat p{
     padding-top:15px ;
     margin: 0px;
-    color: #FDCA00;
+    color: #ffffff;
 
 }
 
