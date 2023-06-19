@@ -127,12 +127,16 @@ sendMail.onclick = ()=> {
 
 window.onresize = function(event) {
     console.log(window.innerWidth)
-    if(window.innerWidth%4 = 0){
+    if(window.innerWidth < 481){
+        window.scrollTo(0,0);
+    }
+    else {
         window.location.reload()
+        window.scrollTo(0,0);
     }
 
         // document.querySelectorAll("link[rel=stylesheet]").forEach(link => link.href = link.href.replace(/\?.*|$/, "?" + Date.now()))
-    window.scrollTo(0,0);
+
 
 };
 console.log(scrollHeight)
