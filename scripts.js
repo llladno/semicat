@@ -2,16 +2,25 @@ const line = document.getElementsByClassName('line')[0]
 let wi = window.innerWidth
 let wistart = wi
 let sendMail = document.getElementsByClassName('sendMail')[0]
+let rotateel = document.querySelector('.rotateel')
+let catalogcard = document.getElementsByClassName('catalogcard')
 wi = 0
 
 setInterval(() => {
     wi = wi + window.innerWidth
-    if (wi === wistart * 3) wi = 0
+    if (wi >= wistart * 4) {
+        line.style.transitionDuration = '0s';
+        console.log('this')
+        wi = 0
+    }
+    else{
+        line.style.transitionDuration = '1s';
+    }
     line.style.left = -wi + 'px'
     console.log('su')
     console.log(wi)
 
-}, 7000)
+}, 5000)
 let scrollHeight = Math.max(
     document.body.scrollHeight, document.documentElement.scrollHeight,
     document.body.offsetHeight, document.documentElement.offsetHeight,
@@ -50,7 +59,6 @@ addEventListener("scroll", (event) => {
 
     // console.log(window.scrollY)
 });
-
 
 function init() {
     let map = new ymaps.Map('map', {
@@ -118,8 +126,111 @@ sendMail.onclick = ()=> {
 }
 
 window.onresize = function(event) {
-        window.location.reload()
+    console.log(window.innerWidth)
+    window.location.reload()
+        // document.querySelectorAll("link[rel=stylesheet]").forEach(link => link.href = link.href.replace(/\?.*|$/, "?" + Date.now()))
+    window.scrollTo(0,0);
+
 };
-
-
 console.log(scrollHeight)
+
+catalogcard[0].addEventListener('click',()=>{
+    let cars = document.querySelector('.cars')
+    rotateel.textContent = 'БУЛЬДОЗЕРЫ'
+    cars.innerHTML = `
+                                                <p>SEM816D</p>
+                                            <p>SEM816D LGP</p>
+                                            <p>SEM816D FR</p>
+                                            <p>SEM822</p>
+                                            <p>SEM822LGP</p>
+                                            <p>SEM822D FR</p>
+                                            <p>SEM826D</p>`
+
+    for (let c = 1; c < catalogcard.length;c++){
+        console.log(catalogcard[c])
+        catalogcard[c].style.backgroundColor='#1F1F1FFF'
+        catalogcard[c].onmouseover = function () {
+            catalogcard[c].style.backgroundColor = "#343434";
+        };
+        catalogcard[c].onmouseleave = function () {
+            catalogcard[c].style.backgroundColor = "#1F1F1FFF";
+        }
+    }
+    rotateel.style.left = '120px'
+    catalogcard[0].style.backgroundColor='#343434'
+})
+catalogcard[1].addEventListener('click',()=>{
+    let cars = document.querySelector('.cars')
+    rotateel.textContent = 'ПОГРУЗЧИКИ'
+    cars.innerHTML = `
+                                                <p>SEM636D</p>
+                                            <p>SEM653D</p>
+                                            <p>SEM655D</p>
+                                            <p>SEM660D</p>
+                                            <p>SEM668D</p>`
+
+    for (let c = 0; c < catalogcard.length;c++){
+        if(c != 1){
+            console.log(catalogcard[c])
+            catalogcard[c].style.backgroundColor='#1F1F1FFF'
+            catalogcard[c].onmouseover = function () {
+                catalogcard[c].style.backgroundColor = "#343434";
+            };
+            catalogcard[c].onmouseleave = function () {
+                catalogcard[c].style.backgroundColor = "#1F1F1FFF";
+            }
+        }
+        }
+    rotateel.style.left = '120px'
+    catalogcard[1].style.backgroundColor='#343434'
+})
+catalogcard[2].addEventListener('click',()=>{
+    let cars = document.querySelector('.cars')
+    cars.innerHTML = `<p>SEM915</p>
+                                            <p>SEM917</p>
+                                            <p>SEM919</p>
+                                            <p>SEM922AWD</p>`
+
+    for (let c = 0; c < catalogcard.length;c++){
+        if(c != 2){
+            console.log(catalogcard[c])
+            catalogcard[c].style.backgroundColor='#1F1F1FFF'
+            catalogcard[c].onmouseover = function () {
+                catalogcard[c].style.backgroundColor = "#343434";
+            };
+            catalogcard[c].onmouseleave = function () {
+                catalogcard[c].style.backgroundColor = "#1F1F1FFF";
+            }
+        }
+    }
+    catalogcard[2].style.backgroundColor='#343434'
+    rotateel.style.left = '100px'
+    rotateel.textContent = 'ГРЕЙДЕРЫ'
+})
+catalogcard[3].addEventListener('click',()=>{
+    let cars = document.querySelector('.cars')
+    rotateel.textContent = 'КАТКИ'
+    cars.innerHTML = `
+                                                <p>SEM512</p>
+                                            <p>SEM518</p>
+                                            <p>SEM816D FR</p>
+                                            <p>SEM822</p>
+                                            <p>SEM822LGP</p>
+                                            <p>SEM822D FR</p>
+                                            <p>SEM826D</p>`
+
+    for (let c = 0; c < catalogcard.length-1;c++){
+        console.log(catalogcard[c])
+        catalogcard[c].style.backgroundColor='#1F1F1FFF'
+        catalogcard[c].onmouseover = function () {
+            catalogcard[c].style.backgroundColor = "#343434";
+        };
+        catalogcard[c].onmouseleave = function () {
+            catalogcard[c].style.backgroundColor = "#1F1F1FFF";
+        }
+    }
+    catalogcard[3].style.backgroundColor='#343434'
+    rotateel.style.left = '50px'
+})
+
+

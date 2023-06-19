@@ -139,7 +139,7 @@ html, body{
 .zapimgs img{
     width: 100%;
 }
-.bgzap{
+.bgzap, .bgzap2{
     width: 45%;
     display: flex;
     justify-content: center;
@@ -161,14 +161,16 @@ html, body{
     width: 2px;
     background: #FDCA00;
 }
-.textzap{
+.textzap,.textzap2{
     width: 45%;
     display: flex;
-
     align-items: center
 }
 .textzap p{
     font-size: 25px;
+}
+.textzap2 p{
+    font-size: 21px;
 }
 .cardAboutUs{
     padding-top: 20px;
@@ -237,7 +239,8 @@ textarea{
     padding: 20px;
     border-radius: 20px;
     display: grid;
-    width: 70%;
+    width: 80%;
+    max-width: 950px;
     background: #111111;
 }
 .catalogcenter{
@@ -245,6 +248,7 @@ textarea{
     justify-content: space-between;
 }
 .catalogcard{
+    width: 22%;
     display: flex;
     justify-content: center;
     border-radius: 20px;
@@ -282,6 +286,9 @@ textarea{
     z-index: 1;
 }
 .blackcat{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     width: 100%;
     position: relative;
     z-index: 2;
@@ -346,15 +353,38 @@ textarea{
     background: #FDCA00;
 }
 
-.zapdouble{
+.zapdouble, .zapdouble2{
     display: flex;
     justify-content: space-between;
     margin-top: 50px
 }
 
+.zapdouble2{
+    height: 70%;
+}
+
+.rotateel{
+    transform: rotate(270deg);
+    color: #FDCA00;
+    letter-spacing: 8px;
+    left: 120px;
+    margin: 0px;
+    text-align: center;
+    position: relative;
+}
+
 @media (max-width: 1200px) {
     .textzap p{
         font-size: 21px;
+    }
+    .textzap2{
+        width: 50%;
+    }
+    .bgzap2{
+        width: 45%;
+    }
+    .textzap2 p{
+        font-size: 18px;
     }
     .one {
         width: 6%;
@@ -366,7 +396,10 @@ textarea{
         width: 150px;
     }
     .catalogcard img {
-        height: 140px;
+        height: 120px;
+    }
+    .catalogcard p{
+        font-size: 20px;
     }
 }
 .centerAboutUs img{
@@ -389,6 +422,9 @@ textarea{
 
 
 @media (max-width: 1000px) {
+    .catalogcard p{
+        font-size: 16px;
+    }
     .textzap p{
         font-size: 18px;
     }
@@ -397,6 +433,12 @@ textarea{
     }
     .centerAboutUs img{
         width: 120px;
+    }
+    .textzap2 p{
+        font-size: 14px;
+    }
+    .bgzap2{
+        width: 48%;
     }
     .container{
         margin: 50px 30px 50px 30px;
@@ -427,18 +469,27 @@ textarea{
     }
 }
 .catalogcard img {
-    height: 115px;
+    height: 90px;
 }
 @media (max-width: 768px) {
-    .zapdouble{
+    .rotateel{
+        display: none;
+    }
+    .zapdouble, .zapdouble2{
         display: grid;
+        grid-column-start: 2;
         justify-items: center;
     }
-    .bgzap{
+    .bgzap, .bgzap2{
+        grid-row-start: 2;
         width: 100%;
     }
-    .textzap{
+    .textzap, .textzap2 {
+        grid-column-start: 1;
         width: 100%;
+    }
+    .textzap p, .textzap2 p{
+        font-size: 20px;
     }
     p{
         font-size: 20px
@@ -461,7 +512,6 @@ textarea{
     .centerAboutUs img{
         width: 70px;
     }
-
     .cardAboutUs{
         width: 23%;
         font-size: 18px;
@@ -489,9 +539,17 @@ textarea{
     .centerzap h1{
         font-size: 24px;
     }
+    .catalog{
+        max-width: 660px;
+        width: 100%;
+    }
+    .catalogcard{
+        width: 100%;
+    }
+
     .catalogcenter{
         display: grid;
-        row-gap: 20px;
+        row-gap: 15px;
         width: 100%;
         grid-template-columns: 45% 45%;
     }
