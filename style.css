@@ -10,6 +10,11 @@ p{
 html {
     overflow-x: hidden;
 }
+a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 * {
@@ -18,6 +23,9 @@ html {
 .adaptive{
     width: 100%;
     display: flex;
+}
+html {
+    scroll-behavior: smooth;
 }
 html, body{
     position: relative;
@@ -79,7 +87,7 @@ html, body{
 }
 .cemicattitle{
     color: white;
-    margin-top: 200px;
+    margin-top: 180px;
     margin-left: 5%;
     width: 40%;
 }
@@ -123,7 +131,9 @@ html, body{
     display: flex;
     justify-content: center;
 }
-
+.questions button:hover{
+    background: #fdda5f;
+}
 .centerzap{
     width: 50%;
     margin-top: 30px;
@@ -139,8 +149,17 @@ html, body{
 .zapimgs img{
     width: 100%;
 }
-.bgzap, .bgzap2{
+.bgzap{
     width: 45%;
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+    background: #111111;
+    border-radius: 20px;
+}
+.bgzap2{
+    width: 90%;
+    float: right;
     display: flex;
     justify-content: center;
     padding: 1%;
@@ -161,8 +180,13 @@ html, body{
     width: 2px;
     background: #FDCA00;
 }
-.textzap,.textzap2{
+.textzap{
     width: 45%;
+    display: flex;
+    align-items: center
+}
+.textzap2{
+    width: 100%;
     display: flex;
     align-items: center
 }
@@ -170,7 +194,7 @@ html, body{
     font-size: 25px;
 }
 .textzap2 p{
-    font-size: 21px;
+    font-size: 25px;
 }
 .cardAboutUs{
     padding-top: 20px;
@@ -209,9 +233,13 @@ html, body{
     display: flex;
     justify-content: space-between;
 }
+.inputPlace p{
+    font-size: 25px;
+}
 .questions input{
     width: 100%;
     border-radius: 20px;
+    padding: 5px 20px;
     height: 35px;
     border: 2px solid white;
 }
@@ -220,6 +248,7 @@ html, body{
 }
 
 textarea{
+    padding: 5px 20px;
     border-radius: 20px;
 }
 
@@ -337,7 +366,7 @@ textarea{
 }
 .map{
     width: 100%;
-    height: 100%;
+    height: 300px;
 }
 .lastslide{
     width: 100%;
@@ -347,6 +376,7 @@ textarea{
     justify-content: center;
 }
 .lastslideConteiner{
+    height: 500px;
     display: flex;
     border-radius: 20px;
     overflow: hidden;
@@ -374,19 +404,25 @@ textarea{
     text-align: center;
     position: relative;
 }
+.lastslideConteiner{
+    display: grid;
+}
+.cars{
+    width: 210px;
+}
 
 @media (max-width: 1200px) {
     .textzap p{
         font-size: 21px;
     }
     .textzap2{
-        width: 50%;
+        width: 100%;
     }
     .bgzap2{
-        width: 45%;
+        width: 80%;
     }
     .textzap2 p{
-        font-size: 18px;
+        font-size: 21px;
     }
     .one {
         width: 6%;
@@ -422,7 +458,6 @@ textarea{
     font-size: 26px;
 }
 
-
 @media (max-width: 1000px) {
     .catalogcard p{
         font-size: 16px;
@@ -436,11 +471,15 @@ textarea{
     .centerAboutUs img{
         width: 120px;
     }
+
     .textzap2 p{
-        font-size: 14px;
+        font-size: 18px;
     }
     .bgzap2{
-        width: 48%;
+        width: 90%;
+    }
+    .cars{
+        width: 150px;
     }
     .container{
         margin: 50px 30px 50px 30px;
@@ -461,14 +500,20 @@ textarea{
         background: url("img3.png");
         background-position-x: -500px;
     }
+    .questions{
+        padding: 25px;
+    }
+    .questions p{
+        font-size: 18px;
+    }
 
-.lastslideConteiner{
-    display: grid;
-}
     .map{
         width: 100%;
-        height: 250px;
+        height: 300px;
     }
+}
+.lastslideConteiner{
+    margin: 20px;
 }
 .catalogcard img {
     height: 90px;
@@ -534,6 +579,10 @@ textarea{
         background: #FDCA00;
         border-radius: 45px;
         font-size: 28px;
+    }
+    .questions{
+        display: grid;
+        justify-items: center;
     }
     .centerzap{
         width: 75%;

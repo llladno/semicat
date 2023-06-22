@@ -127,8 +127,11 @@ sendMail.onclick = ()=> {
 
 window.onresize = function(event) {
     console.log(window.innerWidth)
+    let wi = window.innerWidth
     if(window.innerWidth < 481){
-        window.scrollTo(0,0);
+        if(wi % 4 == 0){
+            window.scrollTo(0,0);
+        }
     }
     else {
         window.location.reload()
@@ -143,6 +146,7 @@ console.log(scrollHeight)
 
 catalogcard[0].addEventListener('click',()=>{
     let cars = document.querySelector('.cars')
+    let img = document.querySelector('.img')
     rotateel.textContent = 'БУЛЬДОЗЕРЫ'
     cars.innerHTML = `
                                                 <p>SEM816D</p>
@@ -164,14 +168,17 @@ catalogcard[0].addEventListener('click',()=>{
         }
     }
     rotateel.style.left = '120px'
+    img.src='img/Бульдозер.JPG'
     catalogcard[0].style.backgroundColor='#343434'
 })
 catalogcard[1].addEventListener('click',()=>{
     let cars = document.querySelector('.cars')
+    let img = document.querySelector('.img')
+    img.src='img/погрузчик.jpeg'
     rotateel.textContent = 'ПОГРУЗЧИКИ'
     cars.innerHTML = `
                                                 <p>SEM636D</p>
-                                            <p>SEM653D</p>
+                                            <p>SEM653D    </p>
                                             <p>SEM655D</p>
                                             <p>SEM660D</p>
                                             <p>SEM668D</p>`
@@ -193,6 +200,7 @@ catalogcard[1].addEventListener('click',()=>{
 })
 catalogcard[2].addEventListener('click',()=>{
     let cars = document.querySelector('.cars')
+    let img = document.querySelector('.img')
     cars.innerHTML = `<p>SEM915</p>
                                             <p>SEM917</p>
                                             <p>SEM919</p>
@@ -212,10 +220,12 @@ catalogcard[2].addEventListener('click',()=>{
     }
     catalogcard[2].style.backgroundColor='#343434'
     rotateel.style.left = '100px'
+    img.src='img/Грейдер.jpeg'
     rotateel.textContent = 'ГРЕЙДЕРЫ'
 })
 catalogcard[3].addEventListener('click',()=>{
     let cars = document.querySelector('.cars')
+    let img = document.querySelector('.img')
     rotateel.textContent = 'КАТКИ'
     cars.innerHTML = `
                                                 <p>SEM512</p>
@@ -237,6 +247,7 @@ catalogcard[3].addEventListener('click',()=>{
         }
     }
     catalogcard[3].style.backgroundColor='#343434'
+    img.src='img/Дорожный каток.jpeg'
     rotateel.style.left = '50px'
 })
 
