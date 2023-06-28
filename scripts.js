@@ -129,7 +129,7 @@ window.onresize = function(event) {
     console.log(window.innerWidth)
     let wi = window.innerWidth
     if(window.innerWidth < 481){
-        if(wi % 4 == 0){
+        if(wi % 10 == 0){
             window.scrollTo(0,0);
         }
     }
@@ -168,8 +168,9 @@ catalogcard[0].addEventListener('click',()=>{
         }
     }
     rotateel.style.left = '120px'
-    img.src='img/Бульдозер.JPG'
     catalogcard[0].style.backgroundColor='#343434'
+    img.src='img/Бульдозер.JPG'
+
 })
 catalogcard[1].addEventListener('click',()=>{
     let cars = document.querySelector('.cars')
