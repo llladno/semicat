@@ -110,7 +110,7 @@ html, body{
     border: none;
 }
 .container{
-    margin: 50px 8% ;
+    margin: 80px 8% ;
 }
 
 .centerAboutUs{
@@ -125,7 +125,7 @@ html, body{
     width: 160px;
 }
 .zapcenter{
-    margin-top: 100px;
+    margin-top: 80px;
 }
 .centerzap, .zapcenter{
     display: flex;
@@ -419,7 +419,9 @@ textarea{
 .cars{
     width: 210px;
 }
-
+#ques{
+    margin-top: 80px;
+}
 @media (max-width: 1200px) {
     .textzap p{
         font-size: 21px;
@@ -491,7 +493,7 @@ textarea{
         width: 150px;
     }
     .container{
-        margin: 50px 30px 50px 30px;
+        margin: 80px 30px 80px 30px;
     }
     .cardAboutUs{
         font-size: 24px;
@@ -642,7 +644,7 @@ textarea{
         row-gap: 20px;
     }
     .container{
-        margin: 30px 15px 30px 15px;
+        margin: 50px 15px 50px 15px;
     }
     .cardAboutUs{
         width: 100%;
