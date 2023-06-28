@@ -266,6 +266,10 @@ textarea{
     font-size: 32px;
     color: #FDCA00;
 }
+.center button:hover {
+    background: #fdda5f;
+
+}
 
 .catalog{
     padding: 20px;

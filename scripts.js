@@ -40,22 +40,21 @@ addEventListener("scroll", (event) => {
         circles[1].style.opacity = 100 + 50 - roun + "%"
     } else if (window.scrollY < all4 * 2) {
         let a
-
         a = (window.scrollY * 100) / (all4 * 2)
         console.log(a)
         let roun = Math.round(a)
         circles[1].style.opacity = roun + "%"
         circles[2].style.opacity = 100 + 50 - roun + "%"
 
-    } else if (window.scrollY < all4 * 3) {
-        let a
-        console.log(3)
-        a = (window.scrollY * 100) / (all4 * 4)
-        console.log(a)
-        let roun = Math.round(a)
-        circles[2].style.opacity = 100 + 50 - roun + "%"
-
     }
+    // else if (window.scrollY < all4 * 3) {
+    //     let a
+    //     console.log(3)
+    //     a = (window.scrollY * 100) / (all4 * 4)
+    //     console.log(a)
+    //     let roun = Math.round(a)
+    //     circles[2].style.opacity = 100 + 50 - roun + "%"
+    // }
 
     // console.log(window.scrollY)
 });
@@ -129,7 +128,7 @@ window.onresize = function(event) {
     console.log(window.innerWidth)
     let wi = window.innerWidth
     if(window.innerWidth < 481){
-        if(wi % 10 == 0){
+        if(wi % 25 == 0){
             window.scrollTo(0,0);
         }
     }
