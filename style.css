@@ -421,7 +421,13 @@ textarea{
 #ques{
     margin-top: 80px;
 }
+.lastslideConteiner p{
+    font-size: 20px;
+}
 @media (max-width: 1200px) {
+    .inputPlace p{
+        font-size: 22px;
+    }
     .textzap p{
         font-size: 21px;
     }
@@ -466,6 +472,9 @@ textarea{
 }
 .oneemploy h1{
     font-size: 26px;
+}
+.lastslideConteiner p{
+    font-size: 18px;
 }
 
 @media (max-width: 1000px) {
@@ -614,6 +623,9 @@ textarea{
         width: 100%;
         grid-template-columns: 45% 45%;
     }
+    .lastslideConteiner p{
+        font-size: 20px;
+    }
 }
 @media (max-width: 480px) {
     .one{
@@ -702,5 +714,8 @@ textarea{
     }
     .service img{
         width: 90%;
+    }
+    .lastslideConteiner p{
+        font-size: 16px;
     }
 }
