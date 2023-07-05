@@ -1,16 +1,19 @@
-p{
+p {
     font-size: 30px;
     text-align: justify;
 }
+
 *,
 *::before,
 *::after {
     box-sizing: border-box;
 }
+
 html {
     overflow-x: hidden;
 }
-a{
+
+a {
     color: #FFFFFF;
     text-decoration: none;
 }
@@ -20,14 +23,17 @@ a{
 * {
     font-family: 'Montserrat', sans-serif;
 }
-.adaptive{
+
+.adaptive {
     width: 100%;
     display: flex;
 }
+
 html {
     scroll-behavior: smooth;
 }
-html, body{
+
+html, body {
     position: relative;
     left: 0px;
     right: 0px;
@@ -37,22 +43,28 @@ html, body{
     height: 100%;
 }
 
-.one{
+h1{
+    font-size: 36px;
+}
+
+.one {
     background: #111111;
     width: 5%;
     min-height: 100%;
 }
-.two{
+
+.two {
     width: 100%;
 }
 
-.startslide img{
+.startslide img {
     width: 100vw;
     height: 100vh;
     object-fit: cover;
 
 }
-.line{
+
+.line {
     filter: brightness(30%);
     display: flex;
     width: 100%;
@@ -61,46 +73,57 @@ html, body{
     transition: all ease 1s;
 
 }
-.startslide{
+
+.startslide {
     /*background: url("/img/img3.png");*/
     background-size: cover;
     height: 100vh;
 }
 
-.navbar{
+.navbar {
     background: black;
     width: 40%;
     height: 100px;
     border-radius: 0px 0px 20px 20px;
 }
-.navbarconte{
+
+.navbarconte {
     color: white;
-    padding: 30px 10% 0px 10%;
+    padding: 0px 10% 0px 10%;
+}
+.navbarconteparagraph{
+    font-size: 16px;
+    text-align: center;
+    margin: 15px 0px 7px 0px;
 }
 
-.navbarlink{
+.navbarlink {
     font-size: 20px;
     margin-top: 20px;
     display: flex;
     justify-content: space-around;
 }
-.cemicattitle{
+
+.cemicattitle {
+    display: flex;
+    align-items: center;
     color: white;
-    margin-top: 180px;
+    height: 80%;
     margin-left: 5%;
     width: 40%;
 }
 
-.cemicattitle h1{
-    color:#FDCA00 ;
+.cemicattitle h1 {
+    margin: 0;
+    color: #FDCA00;
 }
 
-.center{
+.center {
     display: flex;
     justify-content: center;
 }
 
-.cemicattitle button{
+.cemicattitle button {
     margin-right: 30%;
     font-size: 30px;
     background: #FDCA00;
@@ -108,94 +131,115 @@ html, body{
     border-radius: 20px;
     border: none;
 }
-.container{
-    margin: 80px 8% ;
+
+.container {
+    margin: 80px 8%;
 }
 
-.centerAboutUs{
+.centerAboutUs {
     display: flex;
     justify-content: space-between;
 }
-.container h1{
+
+.container h1 {
     text-align: center;
 }
 
-.centerAboutUs img{
+.centerAboutUs img {
     width: 160px;
 }
-.zapcenter{
+
+.zapcenter {
     margin-top: 80px;
 }
-.centerzap, .zapcenter{
+
+.centerzap, .zapcenter {
     display: flex;
     justify-content: center;
 }
-.questions button:hover{
+
+.questions button:hover {
     background: #fdda5f;
 }
-.centerzap{
+
+.centerzap {
     width: 50%;
     margin-top: 30px;
     background: black;
-    color:white;
+    color: white;
     padding: 20px 20px;
     border-radius: 20px;
 }
-.zapimgs{
+
+.zapimgs {
     max-width: 100%;
-    border-radius: 20px;
+    border-radius: 15px;
 }
-.zapimgs img{
+
+.zapimgs img {
+    object-fit: cover;
     width: 100%;
 }
-.bgzap{
+
+.bgzap {
     width: 45%;
     display: flex;
     justify-content: center;
-    padding: 1%;
+    padding: 5px;
     background: #111111;
     border-radius: 20px;
 }
-.bgzap2{
+
+.bgzap2 {
     width: 90%;
     float: right;
+    height: 100%;
+    object-fit: cover;
     display: flex;
     justify-content: center;
-    padding: 1%;
+    padding: 5px;
     background: #111111;
     border-radius: 20px;
 }
-.zapimgs{
+
+.zapimgs {
     overflow: hidden;
 }
-.zapline{
+
+.zapline {
+    height: 100%;
     display: flex;
     position: relative;
     left: 0px;
 }
 
-.zapcard{
+.zapcard {
     margin: 0px 40px 0px 40px;
     width: 2px;
     background: #FDCA00;
 }
-.textzap{
+
+.textzap {
     width: 45%;
     display: flex;
     align-items: center
 }
-.textzap2{
+
+.textzap2 {
     width: 100%;
     display: flex;
     align-items: center
 }
-.textzap p{
+
+.textzap p {
     font-size: 25px;
 }
-.textzap2 p{
+
+.textzap2 p {
     font-size: 25px;
 }
-.cardAboutUs{
+
+.cardAboutUs {
     padding-top: 20px;
     width: 22%;
     text-align: center;
@@ -207,35 +251,41 @@ html, body{
     background: black;
 }
 
-.service img{
+.service img {
     width: 60%;
 }
 
-.employyes p{
+.employyes p {
     text-align: center;
 }
-.oneemploy{
+
+.oneemploy {
     width: 33%;
 }
 
-.manyemploeeys{
-    display: flex;justify-content: space-between
+.manyemploeeys {
+    display: flex;
+    justify-content: space-between
 }
-.questions{
+
+.questions {
     display: flex;
     background: black;
     border-radius: 20px;
     padding: 40px;
     color: white;
 }
-.inputPlace{
+
+.inputPlace {
     display: flex;
     justify-content: space-between;
 }
-.inputPlace p{
+
+.inputPlace p {
     font-size: 25px;
 }
-.questions input{
+
+.questions input {
     font-size: 22px;
     width: 100%;
     border-radius: 20px;
@@ -243,34 +293,37 @@ html, body{
     height: 35px;
     border: 2px solid white;
 }
-.centerAboutUs p{
+
+.centerAboutUs p {
     text-align: center;
 }
 
-textarea{
+textarea {
     font-size: 22px;
     padding: 5px 20px;
     border-radius: 20px;
 }
 
-.questions button{
+.questions button {
     margin-top: 40px;
     border: none;
     padding: 5px 40px;
     background: #FDCA00;
-    border-radius: 45px;
+    border-radius: 20px;
     font-size: 35px;
 }
-.centerzap h1{
+
+.centerzap h1 {
     font-size: 32px;
     color: #FDCA00;
 }
+
 .center button:hover {
     background: #fdda5f;
 
 }
 
-.catalog{
+.catalog {
     padding: 20px;
     border-radius: 20px;
     display: grid;
@@ -278,11 +331,13 @@ textarea{
     max-width: 950px;
     background: #111111;
 }
-.catalogcenter{
+
+.catalogcenter {
     display: flex;
     justify-content: space-between;
 }
-.catalogcard{
+
+.catalogcard {
     width: 22%;
     display: flex;
     justify-content: center;
@@ -291,39 +346,46 @@ textarea{
     background: #1F1F1FFF;
     margin-top: 20px;
 }
-.catalogcard *{
+
+.catalogcard * {
     pointer-events: none;
 }
+
 .catalogcard p {
     color: white;
     text-align: center;
     margin: 0px;
 }
+
 .catalogcard img {
     height: 168px;
 }
-.black{
+
+.black {
     width: 100%;
     max-height: 500px;
     padding: 20px;
     background: #1f1f1f;
     border-radius: 20px;
 }
-.catalogimgplace{
+
+.catalogimgplace {
     overflow: hidden;
     background: #111111;
     border-radius: 20px;
     height: 400px;
     max-height: 400px;
 }
-.catalogimgplace img{
+
+.catalogimgplace img {
     object-fit: cover;
     width: 100%;
     height: 100%;
     position: relative;
     z-index: 1;
 }
-.blackcat{
+
+.blackcat {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -332,22 +394,23 @@ textarea{
     z-index: 2;
     top: -101%;
     height: 100%;
-    background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.33) 0%, rgba(0,0,0,1) 100%);
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.33) 0%, rgba(0, 0, 0, 1) 100%);
 }
-.blackcat p{
-    padding-top:15px ;
+
+.blackcat p {
+    padding-top: 15px;
     margin: 0px;
     color: #ffffff;
 
 }
 
-.catalogcard:hover{
+.catalogcard:hover {
     background: #343434;
 
 }
 
-.catalog button{
+.catalog button {
     padding: 10px 20px;
     font-size: 20px;
     border: none;
@@ -355,7 +418,7 @@ textarea{
     background: #FDCA00;
 }
 
-.circle{
+.circle {
     width: 10px;
     height: 10px;
     background: #FDCA00;
@@ -364,7 +427,8 @@ textarea{
     border-radius: 50px;
     margin-top: 25px;
 }
-.points{
+
+.points {
     position: fixed;
     display: flex;
     width: 5%;
@@ -372,18 +436,21 @@ textarea{
     align-items: center;
     height: 100vh;
 }
-.map{
+
+.map {
     width: 100%;
     height: 300px;
 }
-.lastslide{
+
+.lastslide {
     width: 100%;
     height: 100%;
     background: #111111;
     display: flex;
     justify-content: center;
 }
-.lastslideConteiner{
+
+.lastslideConteiner {
     height: 500px;
     display: flex;
     border-radius: 20px;
@@ -393,16 +460,18 @@ textarea{
     background: #FDCA00;
 }
 
-.zapdouble, .zapdouble2{
+.zapdouble, .zapdouble2 {
+    margin-top: 40px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-.zapdouble2{
+.zapdouble2 {
     height: 70%;
 }
 
-.rotateel{
+.rotateel {
     transform: rotate(270deg);
     color: #FDCA00;
     letter-spacing: 8px;
@@ -411,312 +480,391 @@ textarea{
     text-align: center;
     position: relative;
 }
-.lastslideConteiner{
+
+.lastslideConteiner {
     display: grid;
 }
-.cars{
+
+.cars {
     width: 210px;
 }
-#ques{
+
+#ques {
     margin-top: 80px;
 }
-.lastslideConteiner p{
-    line-height: 30px;
+
+.lastslideConteiner p {
+    line-height: 25px;
     font-size: 22px;
 }
+
 @media (max-width: 1200px) {
-    .inputPlace p{
+    .inputPlace p {
         font-size: 22px;
     }
-    .textzap p{
+
+    .textzap p {
         font-size: 21px;
     }
-    .textzap2{
+
+    .textzap2 {
         width: 100%;
     }
-    .bgzap2{
+
+    .bgzap2 {
         width: 80%;
     }
-    .textzap2 p{
+
+    .textzap2 p {
         font-size: 21px;
     }
+
     .one {
         width: 6%;
     }
-    .navbarlink{
+
+    .navbarlink {
         font-size: 18px;
     }
-    .centerAboutUs img{
+
+    .centerAboutUs img {
         width: 150px;
     }
+
     .catalogcard img {
         height: 120px;
     }
-    .catalogcard p{
+
+    .catalogcard p {
         font-size: 20px;
     }
 }
-.centerAboutUs img{
+
+.centerAboutUs img {
     width: 135px;
 }
-.cardAboutUs{
+
+.cardAboutUs {
     font-size: 26px;
     border-radius: 20px;
 }
 
-.oneemploy img{
+.oneemploy img {
     width: 70%;
 }
-.oneemploy p{
+
+.oneemploy p {
     font-size: 24px;
 }
-.oneemploy h1{
+
+.oneemploy h1 {
     font-size: 26px;
 }
-.lastslideConteiner p{
+
+.lastslideConteiner p {
     font-size: 18px;
 }
 
 @media (max-width: 1000px) {
-    .catalogcard p{
+    .catalogcard p {
         font-size: 16px;
     }
-    .textzap p{
+
+    .textzap p {
         font-size: 18px;
     }
-    p{
+
+    p {
         font-size: 24px
     }
-    .centerAboutUs img{
+
+    .centerAboutUs img {
         width: 120px;
     }
 
-    .textzap2 p{
-        font-size: 18px;
-    }
-    .bgzap2{
-        width: 90%;
-    }
-    .cars{
-        width: 150px;
-    }
-    .container{
-        margin: 80px 30px 80px 30px;
-    }
-    .cardAboutUs{
-        font-size: 24px;
-    }
-    .oneemploy img{
-        width: 50%;
-    }
-    .oneemploy p{
-        font-size: 20px;
-    }
-    .oneemploy h1{
-        font-size: 24px;
-    }
-    .startslide{
-        background: url("img3.png");
-        background-position-x: -500px;
-    }
-    .questions{
-        padding: 25px;
-    }
-    .questions p{
+    .textzap2 p {
         font-size: 18px;
     }
 
-    .map{
+    .bgzap2 {
+        width: 90%;
+    }
+
+    .cars {
+        width: 150px;
+    }
+
+    .container {
+        margin: 80px 30px 80px 30px;
+    }
+
+    .cardAboutUs {
+        font-size: 24px;
+    }
+
+    .oneemploy img {
+        width: 50%;
+    }
+
+    .oneemploy p {
+        font-size: 20px;
+    }
+
+    .oneemploy h1 {
+        font-size: 24px;
+    }
+
+    .startslide {
+        background: url("img3.png");
+        background-position-x: -500px;
+    }
+
+    .questions {
+        padding: 25px;
+    }
+
+    .questions p {
+        font-size: 18px;
+    }
+
+    .map {
         width: 100%;
         height: 300px;
     }
 }
-.lastslideConteiner{
+
+.lastslideConteiner {
     margin: 20px;
 }
+
 .catalogcard img {
     height: 90px;
 }
+
 @media (max-width: 768px) {
-    .rotateel{
+    .rotateel {
         display: none;
     }
-    .zapdouble, .zapdouble2{
+
+    .zapdouble, .zapdouble2 {
         display: grid;
         grid-column-start: 2;
         justify-items: center;
     }
-    .bgzap, .bgzap2{
+
+    .bgzap, .bgzap2 {
         grid-row-start: 2;
         width: 100%;
     }
+
     .textzap, .textzap2 {
         grid-column-start: 1;
         width: 100%;
     }
-    .textzap p, .textzap2 p{
+
+    .textzap p, .textzap2 p {
         font-size: 20px;
     }
-    p{
+
+    p {
         font-size: 20px
     }
+
     .one {
         width: 8%;
     }
-    .navbar{
+
+    .navbar {
         width: 70%;
     }
-    .cemicattitle{
+
+    .cemicattitle {
         width: 70%;
     }
-    .cemicattitle button{
+
+    .cemicattitle button {
         margin-right: 25%;
         font-size: 25px;
         padding: 8px 26px;
         border-radius: 20px;
     }
-    .centerAboutUs img{
+
+    .centerAboutUs img {
         width: 70px;
     }
-    .cardAboutUs{
+
+    .cardAboutUs {
         width: 23%;
         font-size: 18px;
     }
-    .oneemploy img{
+
+    .oneemploy img {
         width: 35%;
     }
-    .oneemploy p{
+
+    .oneemploy p {
         font-size: 14px;
     }
-    .oneemploy h1{
+
+    .oneemploy h1 {
         font-size: 16px;
     }
-    .questions button{
+
+    .questions button {
         margin-top: 25px;
         border: none;
         padding: 5px 35px;
         background: #FDCA00;
-        border-radius: 45px;
+        border-radius: 20px;
         font-size: 28px;
     }
-    .questions{
+
+    .questions {
         display: grid;
         justify-items: center;
     }
-    .centerzap{
+
+    .centerzap {
         width: 75%;
     }
-    .centerzap h1{
+
+    .centerzap h1 {
         font-size: 24px;
     }
-    .catalog{
+
+    .catalog {
         max-width: 660px;
         width: 100%;
     }
-    .catalogcard{
+
+    .catalogcard {
         width: 100%;
     }
 
-    .catalogcenter{
+    .catalogcenter {
         display: grid;
         row-gap: 15px;
         width: 100%;
         grid-template-columns: 45% 45%;
     }
-    .lastslideConteiner p{
-        line-height: 40px;
-        font-size: 20px;
+
+    .lastslideConteiner p {
+        line-height: 25px;
+        font-size: 17px;
     }
 }
+
 @media (max-width: 480px) {
-    .one{
+    .one {
         display: none;
     }
-    .two{
+
+    .two {
         width: 100%;
     }
-    .navbar{
+
+    .navbar {
         width: 90%;
     }
-    .navbarlink{
+
+    .navbarlink {
         font-size: 15px;
     }
-    .cemicattitle{
+
+    .cemicattitle {
         width: 90%;
     }
-    .cemicattitle button{
+
+    .cemicattitle button {
         margin-right: 20%;
         font-size: 20px;
         padding: 6px 22px;
         border-radius: 20px;
     }
-    .centerAboutUs{
+
+    .centerAboutUs {
         display: grid;
         grid-template-columns: 45% 45%;
         row-gap: 20px;
     }
-    .container{
+
+    .container {
         margin: 50px 15px 50px 15px;
     }
-    .cardAboutUs{
+
+    .cardAboutUs {
         width: 100%;
         font-size: 20px;
     }
-    p{
+
+    p {
         font-size: 18px;
     }
-    .centerzap{
+
+    .centerzap {
         width: 85%;
     }
-    .oneemploy{
+
+    .oneemploy {
         width: 90%;
     }
-    .oneemploy img{
+
+    .oneemploy img {
         width: 45%;
     }
-    .oneemploy p{
+
+    .oneemploy p {
         font-size: 20px;
     }
-    .oneemploy h1{
+
+    .oneemploy h1 {
         font-size: 22px;
     }
-    .manyemploeeys{
+
+    .manyemploeeys {
         display: grid;
         justify-items: center;
         grid-template-columns: 100%;
         row-gap: 20px;
     }
+
     .catalogcard img {
         height: 80px;
     }
-    .startslide{
+
+    .startslide {
         background: url("img3.png");
         background-position-x: -650px;
     }
-    .zapcard{
+
+    .zapcard {
         margin: 0px 20px 0px 20px;
         width: 2px;
         background: #FDCA00;
     }
 
-    .centerzap{
+    .centerzap {
         padding: 20px 30px;
     }
-    .inputPlace{
+
+    .inputPlace {
         display: block;
     }
-    .questions button{
+
+    .questions button {
         margin-top: 20px;
         border: none;
         padding: 5px 30px;
         background: #FDCA00;
-        border-radius: 45px;
+        border-radius: 20px;
         font-size: 20px;
     }
-    .service img{
+
+    .service img {
         width: 90%;
     }
-    .lastslideConteiner p{
+
+    .lastslideConteiner p {
 
         font-size: 16px;
     }
