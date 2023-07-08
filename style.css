@@ -493,6 +493,10 @@ textarea {
     margin-top: 80px;
 }
 
+.marginlastlide{
+    margin: 0px 40px 0px 40px
+}
+
 .lastslideConteiner p {
     line-height: 25px;
     font-size: 22px;
@@ -720,6 +724,7 @@ textarea {
     }
 
     .questions {
+        padding: 20px;
         display: grid;
         justify-items: center;
     }
@@ -850,6 +855,9 @@ textarea {
     .inputPlace {
         display: block;
     }
+    .questions{
+        padding: 10px;
+    }
 
     .questions button {
         margin-top: 20px;
@@ -863,9 +871,12 @@ textarea {
     .service img {
         width: 90%;
     }
+    .marginlastlide{
+        height: 100%;
+        margin: 0px 20px;
+    }
 
     .lastslideConteiner p {
-
-        font-size: 16px;
+        font-size: 13px;
     }
 }
