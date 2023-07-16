@@ -503,6 +503,9 @@ textarea {
 }
 
 @media (max-width: 1200px) {
+    .points {
+        width: 6%;
+    }
     .inputPlace p {
         font-size: 22px;
     }
@@ -646,6 +649,9 @@ textarea {
 }
 
 @media (max-width: 768px) {
+    .points {
+        width: 8%;
+    }
     .rotateel {
         display: none;
     }
