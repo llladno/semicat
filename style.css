@@ -1,5 +1,5 @@
 p {
-    font-size: 30px;
+    font-size: var(--p30);
     text-align: justify;
 }
 
@@ -42,10 +42,19 @@ html, body {
     padding: 0px;
     height: 100%;
 }
+*{
+    --p36: 36px;
+    --p35: 35px;
+    --p30: 30px;
+    --p25: 25px;
+    --p22: 22px;
+}
 
 h1{
-    font-size: 36px;
+    font-size: var(--p36);
 }
+
+
 
 .one {
     background: #111111;
@@ -75,7 +84,6 @@ h1{
 }
 
 .startslide {
-    /*background: url("/img/img3.png");*/
     background-size: cover;
     height: 100vh;
 }
@@ -147,10 +155,6 @@ h1{
 
 .centerAboutUs img {
     width: 160px;
-}
-
-.zapcenter {
-    margin-top: 80px;
 }
 
 .centerzap, .zapcenter {
@@ -231,12 +235,8 @@ h1{
     align-items: center
 }
 
-.textzap p {
-    font-size: 25px;
-}
-
-.textzap2 p {
-    font-size: 25px;
+.textzapP{
+    font-size: var(--p25);
 }
 
 .cardAboutUs {
@@ -255,19 +255,6 @@ h1{
     width: 60%;
 }
 
-.employyes p {
-    text-align: center;
-}
-
-.oneemploy {
-    width: 33%;
-}
-
-.manyemploeeys {
-    display: flex;
-    justify-content: space-between
-}
-
 .questions {
     display: flex;
     background: black;
@@ -282,7 +269,7 @@ h1{
 }
 
 .inputPlace p {
-    font-size: 25px;
+    font-size: var(--p25);
 }
 
 .questions input {
@@ -407,7 +394,6 @@ textarea {
 
 .catalogcard:hover {
     background: #343434;
-
 }
 
 .catalog button {
@@ -440,14 +426,6 @@ textarea {
 .map {
     width: 100%;
     height: 300px;
-}
-
-.lastslide {
-    width: 100%;
-    height: 100%;
-    background: #111111;
-    display: flex;
-    justify-content: center;
 }
 
 .lastslideConteiner {
@@ -502,6 +480,23 @@ textarea {
     font-size: 22px;
 }
 
+.questions .askque{
+    font-size: 25px;
+}
+
+.selected {
+    background: #343434
+
+}
+
+.hover{
+    background: #343434 !important;
+}
+
+.marginTop{
+    margin-top: 80px;
+}
+
 @media (max-width: 1200px) {
     .points {
         width: 6%;
@@ -510,7 +505,7 @@ textarea {
         font-size: 22px;
     }
 
-    .textzap p {
+    .textzapP{
         font-size: 21px;
     }
 
@@ -522,9 +517,7 @@ textarea {
         width: 80%;
     }
 
-    .textzap2 p {
-        font-size: 21px;
-    }
+
 
     .one {
         width: 6%;
@@ -547,37 +540,25 @@ textarea {
     }
 }
 
-.centerAboutUs img {
-    width: 135px;
-}
+    .centerAboutUs img {
+        width: 135px;
+    }
 
-.cardAboutUs {
-    font-size: 26px;
-    border-radius: 20px;
-}
+    .cardAboutUs {
+        font-size: 26px;
+        border-radius: 20px;
+    }
 
-.oneemploy img {
-    width: 70%;
-}
-
-.oneemploy p {
-    font-size: 24px;
-}
-
-.oneemploy h1 {
-    font-size: 26px;
-}
-
-.lastslideConteiner p {
-    font-size: 18px;
-}
+    .lastslideConteiner p {
+        font-size: 18px;
+    }
 
 @media (max-width: 1000px) {
     .catalogcard p {
         font-size: 16px;
     }
 
-    .textzap p {
+    .textzapP{
         font-size: 18px;
     }
 
@@ -589,9 +570,7 @@ textarea {
         width: 120px;
     }
 
-    .textzap2 p {
-        font-size: 18px;
-    }
+
 
     .bgzap2 {
         width: 90%;
@@ -602,24 +581,16 @@ textarea {
     }
 
     .container {
-        margin: 80px 30px 80px 30px;
+        margin: 70px 30px 80px 30px;
+    }
+    .marginTop{
+        margin-top: 70px;
     }
 
     .cardAboutUs {
         font-size: 24px;
     }
 
-    .oneemploy img {
-        width: 50%;
-    }
-
-    .oneemploy p {
-        font-size: 20px;
-    }
-
-    .oneemploy h1 {
-        font-size: 24px;
-    }
 
     .startslide {
         background: url("img3.png");
@@ -694,7 +665,7 @@ textarea {
 
     .cemicattitle button {
         margin-right: 25%;
-        font-size: 25px;
+        font-size: var(--p25);
         padding: 8px 26px;
         border-radius: 20px;
     }
@@ -708,17 +679,7 @@ textarea {
         font-size: 18px;
     }
 
-    .oneemploy img {
-        width: 35%;
-    }
 
-    .oneemploy p {
-        font-size: 14px;
-    }
-
-    .oneemploy h1 {
-        font-size: 16px;
-    }
 
     .questions button {
         margin-top: 25px;
@@ -800,7 +761,11 @@ textarea {
     }
 
     .container {
-        margin: 50px 15px 50px 15px;
+        margin: 40px 15px 40px 15px;
+    }
+
+    .marginTop{
+        margin-top: 30px;
     }
 
     .cardAboutUs {
@@ -816,28 +781,6 @@ textarea {
         width: 85%;
     }
 
-    .oneemploy {
-        width: 90%;
-    }
-
-    .oneemploy img {
-        width: 45%;
-    }
-
-    .oneemploy p {
-        font-size: 20px;
-    }
-
-    .oneemploy h1 {
-        font-size: 22px;
-    }
-
-    .manyemploeeys {
-        display: grid;
-        justify-items: center;
-        grid-template-columns: 100%;
-        row-gap: 20px;
-    }
 
     .catalogcard img {
         height: 80px;

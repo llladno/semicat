@@ -5,20 +5,19 @@ let sendMail = document.getElementsByClassName('sendMail')[0]
 let rotateel = document.querySelector('.rotateel')
 let catalogcard = document.getElementsByClassName('catalogcard')
 wi = 0
+let cars = document.querySelector('.cars')
+let img = document.querySelector('.img')
 
 setInterval(() => {
     wi = wi + window.innerWidth
     if (wi >= wistart * 4) {
         line.style.transitionDuration = '0s';
-        console.log('this')
         wi = 0
     }
     else{
         line.style.transitionDuration = '1s';
     }
     line.style.left = -wi + 'px'
-    console.log('su')
-    console.log(wi)
 
 }, 5000)
 let scrollHeight = Math.max(
@@ -34,14 +33,12 @@ addEventListener("scroll", (event) => {
     if (window.scrollY < all4) {
         let a
         a = (window.scrollY * 100) / all4
-        console.log(Math.round(a))
         let roun = Math.round(a)
         circles[0].style.opacity = 20 + roun + "%"
         circles[1].style.opacity = 100 + 50 - roun + "%"
     } else if (window.scrollY < all4 * 2) {
         let a
         a = (window.scrollY * 100) / (all4 * 2)
-        console.log(a)
         let roun = Math.round(a)
         circles[1].style.opacity = roun + "%"
         circles[2].style.opacity = 100 + 50 - roun + "%"
@@ -84,7 +81,6 @@ sendMail.onclick = ()=> {
         name: name.value,
         email: email.value,
     };
-    console.log('sss')
     if ((maintext.value && name.value && email.value) != '') {
         async function sendMail() {
             let response = await fetch('http://localhost:3005/sendMail', {
@@ -96,11 +92,9 @@ sendMail.onclick = ()=> {
             });
         }
 
-        console.log(mail)
         sendMail()
     } else {
         if (name.value == '') {
-            console.log(name.value)
             name.style.border = '2px solid red'
             name.style.transition = 'all ease 1s';
         }
@@ -125,7 +119,6 @@ sendMail.onclick = ()=> {
 }
 
 window.onresize = function(event) {
-    console.log(window.innerWidth)
     let wi = window.innerWidth
     if(window.innerWidth < 481){
         if(wi % 25 == 0){
@@ -141,11 +134,8 @@ window.onresize = function(event) {
 
 
 };
-console.log(scrollHeight)
 
 catalogcard[0].addEventListener('click',()=>{
-    let cars = document.querySelector('.cars')
-    let img = document.querySelector('.img')
     rotateel.textContent = 'БУЛЬДОЗЕРЫ'
     cars.innerHTML = `
                                                 <p>SEM816D</p>
@@ -157,23 +147,22 @@ catalogcard[0].addEventListener('click',()=>{
                                             <p>SEM826D</p>`
 
     for (let c = 1; c < catalogcard.length;c++){
-        console.log(catalogcard[c])
         catalogcard[c].style.backgroundColor='#1F1F1FFF'
+        catalogcard[c].classList.remove('selected')
         catalogcard[c].onmouseover = function () {
-            catalogcard[c].style.backgroundColor = "#343434";
+            catalogcard[c].classList.add('hover');
         };
         catalogcard[c].onmouseleave = function () {
-            catalogcard[c].style.backgroundColor = "#1F1F1FFF";
+            catalogcard[c].classList.remove('hover');
         }
     }
+    catalogcard[0].classList.add('selected')
     rotateel.style.left = '120px'
     catalogcard[0].style.backgroundColor='#343434'
     img.src='img/Бульдозер.JPG'
 
 })
 catalogcard[1].addEventListener('click',()=>{
-    let cars = document.querySelector('.cars')
-    let img = document.querySelector('.img')
     img.src='img/погрузчик.jpeg'
     rotateel.textContent = 'ПОГРУЗЧИКИ'
     cars.innerHTML = `
@@ -184,23 +173,22 @@ catalogcard[1].addEventListener('click',()=>{
                                             <p>SEM668D</p>`
 
     for (let c = 0; c < catalogcard.length;c++){
-        if(c != 1){
-            console.log(catalogcard[c])
-            catalogcard[c].style.backgroundColor='#1F1F1FFF'
+        if(c != 1)
+        {catalogcard[c].style.backgroundColor='#1F1F1FFF'
+            catalogcard[c].classList.remove('selected')
             catalogcard[c].onmouseover = function () {
-                catalogcard[c].style.backgroundColor = "#343434";
+                catalogcard[c].classList.add('hover');
             };
             catalogcard[c].onmouseleave = function () {
-                catalogcard[c].style.backgroundColor = "#1F1F1FFF";
+                catalogcard[c].classList.remove('hover');
             }
         }
         }
     rotateel.style.left = '120px'
+    catalogcard[1].classList.add('selected')
     catalogcard[1].style.backgroundColor='#343434'
 })
 catalogcard[2].addEventListener('click',()=>{
-    let cars = document.querySelector('.cars')
-    let img = document.querySelector('.img')
     cars.innerHTML = `<p>SEM915</p>
                                             <p>SEM917</p>
                                             <p>SEM919</p>
@@ -208,24 +196,23 @@ catalogcard[2].addEventListener('click',()=>{
 
     for (let c = 0; c < catalogcard.length;c++){
         if(c != 2){
-            console.log(catalogcard[c])
             catalogcard[c].style.backgroundColor='#1F1F1FFF'
+            catalogcard[c].classList.remove('selected')
             catalogcard[c].onmouseover = function () {
-                catalogcard[c].style.backgroundColor = "#343434";
+                catalogcard[c].classList.add('hover');
             };
             catalogcard[c].onmouseleave = function () {
-                catalogcard[c].style.backgroundColor = "#1F1F1FFF";
+                catalogcard[c].classList.remove('hover');
             }
         }
     }
-    catalogcard[2].style.backgroundColor='#343434'
     rotateel.style.left = '100px'
     img.src='img/Грейдер.jpeg'
+    catalogcard[2].classList.add('selected')
     rotateel.textContent = 'ГРЕЙДЕРЫ'
+    catalogcard[2].style.backgroundColor='#343434'
 })
 catalogcard[3].addEventListener('click',()=>{
-    let cars = document.querySelector('.cars')
-    let img = document.querySelector('.img')
     rotateel.textContent = 'КАТКИ'
     cars.innerHTML = `
                                                 <p>SEM512</p>
@@ -237,18 +224,19 @@ catalogcard[3].addEventListener('click',()=>{
                                             <p>SEM826D</p>`
 
     for (let c = 0; c < catalogcard.length-1;c++){
-        console.log(catalogcard[c])
         catalogcard[c].style.backgroundColor='#1F1F1FFF'
+        catalogcard[c].classList.remove('selected')
         catalogcard[c].onmouseover = function () {
-            catalogcard[c].style.backgroundColor = "#343434";
+            catalogcard[c].classList.add('hover');
         };
         catalogcard[c].onmouseleave = function () {
-            catalogcard[c].style.backgroundColor = "#1F1F1FFF";
+            catalogcard[c].classList.remove('hover');
         }
     }
-    catalogcard[3].style.backgroundColor='#343434'
     img.src='img/Дорожный каток.jpeg'
     rotateel.style.left = '50px'
+    catalogcard[3].classList.add('selected')
+    catalogcard[3].style.backgroundColor='#343434'
 })
 
 
